@@ -12,4 +12,5 @@ int main()
         i++;
     }
     printf("%d",r);
+    
 }

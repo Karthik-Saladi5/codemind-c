@@ -1,15 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j;
+    int n,j=1,i;
     scanf("%d",&n);
-    for(i=n;i>=1;i--)
+    while(j<=n)
     {
-        for(j=1;j<=i;j++)
+        for(i=n;i>=1;i--)
         {
-            printf("%d",j);
+        printf("%d ",i);
         }
         printf("
 ");
+        j++;
     }
 }

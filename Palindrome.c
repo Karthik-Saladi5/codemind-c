@@ -12,7 +12,7 @@ int main()
         s=s*10+r;
     }
     if(v==s)
-    printf("Palindrome");
+    printf("True");
     else
-    printf("Not Palindrome");
+    printf("False");
 }

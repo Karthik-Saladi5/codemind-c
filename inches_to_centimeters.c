@@ -1,7 +1,13 @@
 #include<stdio.h>
+void conv(float h)
+{
+    float cm;
+    cm=2.54*h;
+    printf("%.2f",cm);
+}
 int main()
 {
-    float a;
-    scanf("%f",&a);
-    printf("%0.2f",(a*2.54));
+    float h,cm;
+    scanf("%f",&h);
+    conv(h);
 }

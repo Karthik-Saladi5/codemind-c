@@ -1,8 +1,13 @@
 #include<stdio.h>
+void weight(float x, float a, float c)
+{
+    float b;
+    b=(3*x)-a-c;
+    printf("%.f",b);
+}
 int main()
 {
-    int a,b,c,x;
-    scanf("%d%d%d",&x,&a,&b);
-    c=3*x-a-b;
-    printf("%d",c);
+    float a,c,x;
+    scanf("%f%f%f",&x,&a,&c);
+    weight(x,a,c);
 }

@@ -1,8 +1,13 @@
 #include<stdio.h>
+void last(int a)
+{
+    int b;
+    b=a%100;
+    printf("%.2d",b);
+}
 int main()
 {
-    int y,d;
-    scanf("%d",&y);
-    d=y%100;
-    printf("%0.2d",d);
+    int a;
+    scanf("%d",&a);
+    last(a);
 }

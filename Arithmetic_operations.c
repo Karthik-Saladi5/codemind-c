@@ -1,8 +1,7 @@
 #include<stdio.h>
-int main()
+void arithmetic(int a,int b)
 {
-    int a,b,s,d,p,q,r;
-    scanf("%d%d",&a,&b);
+    int s,d,p,q,r;
     s=a+b;
     d=a-b;
     p=a*b;
@@ -13,4 +12,10 @@ Difference:%d
 Product:%d
 Quotient:%d
 Remainder:%d",s,d,p,q,r);
+}
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    arithmetic(a,b);
 }

@@ -1,11 +1,13 @@
 #include<stdio.h>
+void sum( int n)
+{
+    int m;
+    m=0.5*n*(n+1);
+    printf("%d",m);
+}
 int main()
 {
-    int n,i,s=0;
+    int n;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        s=s+i;
-    }
-    printf("%d",s);
+    sum(n);
 }

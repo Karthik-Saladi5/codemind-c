@@ -1,31 +1,36 @@
 #include<stdio.h>
-int main()
+int grade(int p, int c, int b,int m,int s)
 {
-    int p,c,b,m,s,t;
-    scanf("%d%d%d%d%d",&p,&c,&b,&m,&s);
+    int t;
     t=(p+c+b+m+s)/5;
     if (t>=90)
-    {
-        printf("Grade A");
-    }
+    return 1;
     else if(t>=80)
-    {
-        printf("Grade B");
-    }
+    return 2;
     else if(t>=70)
-    {
-        printf("Grade C");
-    }
+    return 3;
     else if(t>=60)
-    {
-        printf("Grade D");
-    }
+    return 4;
     else if(t>=40)
-    {
-        printf("Grade E");
-    }
+    return 5;
     else if(t<40)
-    {
-        printf("Grade F");
-    }
+    return 0;
+}
+int main()
+{
+    int p,c,b,m,s;
+    scanf("%d%d%d%d%d",&p,&c,&b,&m,&s);
+    int x=grade(p,c,b,m,s);
+    if (x==1)
+    printf("Grade A");
+    else if(x==2)
+    printf("Grade B");
+    else if(x==3)
+    printf("Grade C");
+    else if(x==4)
+    printf("Grade D");
+    else if(x==5)
+    printf("Grade E");
+    else if(x==0)
+    printf("Grade F");
 }
